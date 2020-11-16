@@ -1,4 +1,4 @@
-# workvue-todolist02
+# workvue-todolist
 
 ## Project setup
 ```
