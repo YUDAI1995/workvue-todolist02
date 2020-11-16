@@ -120,6 +120,7 @@ export default {
   color: #2c3e50;
 }
 body {
+  min-width: 920px;
   margin: 0;
 }
 .inner {
