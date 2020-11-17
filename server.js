@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var serveStatic = require('serve-static');
 app = express();
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 8080;
 // どこにアクセスさせるかの設定
 // distフォルダ：コンパイルされたファイルが入る場所
 app.use(express.static(__dirname + "/dist/"));

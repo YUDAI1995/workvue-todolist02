@@ -44,7 +44,7 @@ export default {
       }
     ];
     return {
-      socket : io('localhost:4000'),
+      socket : io('/'),
       task: '',
       // idを順番につける
       todoList: todoList.map((item, index) => ({ ...item, id: index })),
