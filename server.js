@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/dist/"));
 // これでルート以外でリロードしてもindex.htmlを読み込んでちゃんとルーティングをしてくれる
 // /.*/で全てのルートを指定。req(request), res(response)
 app.get(/.*/, function(req, res) {
-    res.sendfile(__dirname + "dist/index.html");
+    res.sendfile(__dirname + "/dist/index.html");
 });
 const server = app.listen(port, function(){
   console.log('server started '+ port);
