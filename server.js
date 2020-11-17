@@ -52,7 +52,7 @@ io.on('connection', (socket) => {
 
   // タスクの追加
   socket.on('addtask', (task) => {
-    console.log('added!')
+    console.log('added: '+task);
     io.emit('addtask', task);
   });
 });
