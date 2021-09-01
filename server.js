@@ -21,7 +21,7 @@ const server = app.listen(port, function(){
 });
 
 //ポート番号、サーバー待受状態
-// server.listen(process.env.PORT || 4000)
+// server.listen(process.env.PORT || 8080)
 
 //以下Socket.io部分
 const io = require('socket.io').listen(server)

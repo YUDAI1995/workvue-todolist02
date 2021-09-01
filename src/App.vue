@@ -7,7 +7,6 @@
 <main>
   <div class="inner">
     <InputForm @onsubmit='addTask_socketio'></InputForm>
-    <p>{{$data.task}}</p>
   </div>
   <div class="inner">
     <TodoList :todoList="$data.todoList" @check="onCheckTodo" @delete="onDeleteTodo" />
@@ -15,7 +14,7 @@
 </main>
 <footer>
   <div class="inner">
-    <p><small class="copy">work</small></p>
+    <p><small class="copy">&copy; yy-work</small></p>
   </div>
 </footer>
 </template>
@@ -23,7 +22,7 @@
 <script>
 import InputForm from './components/InputForm.vue'
 import TodoList from './components/TodoList.vue'
-import io from 'socket.io-client';
+import io from 'socket.io-client'
 import _ from 'lodash'
 
 export default {
@@ -36,11 +35,7 @@ export default {
     const todoList = [
       {
         isDone: false,
-        text: '薬'
-      },
-      {
-        isDone: true,
-        text: 'メモ'
+        text: 'タスク01'
       }
     ];
     return {
